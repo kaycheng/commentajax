@@ -1,1 +1,7 @@
 <h1>Stories</h1>
+<%= link_to "Nes Story", new_story_path, class: "btn btn-info" %>
+
+<% @stories.each do |story| %>
+  <h2><%= link_to story.title, story_path(story), class: "text-dark text-decoration-none" %></h2>
+  <p><%= simple_format(story.content).truncate(200) %></p>
+<% end %>
