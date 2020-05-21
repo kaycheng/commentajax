@@ -1,0 +1,5 @@
+var list = document.querySelector('section.comment-list')
+var renderMessage = "<%= j(render "stories/comment", comment: @comment) %>"
+list.innerHTML = renderMessage + list.innerHTML
+
+document.querySelector('form.form-editor').reset()

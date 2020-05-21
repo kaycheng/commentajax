@@ -7,8 +7,6 @@
 <%= render "stories/comment_area", story: @story, comment: @comment %>
 
 <!-- Comment-->
-<section class="comment">
-  <div class="col-6 offset-3">
-
-  </div>
+<section class="comment-list">
+  <%= render partial: "stories/comment", collection: @comments %>
 </section>

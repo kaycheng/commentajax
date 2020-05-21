@@ -1,0 +1,8 @@
+<article class="comment">
+  <div class="col-6 offset-3">
+    <span class="profile">
+      <%= comment.user.email.split('@').first %>
+    </span>
+    <%= simple_format(comment.message) %>
+  </div>
+</article>

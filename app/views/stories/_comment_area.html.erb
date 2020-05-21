@@ -1,6 +1,6 @@
 <section class="comment-area">
   <div class="col-6 offset-3">
-    <%= form_with model: comment, url: story_comments_path(story), remote: true do |f| %>
+    <%= form_with model: comment, url: story_comments_path(story), class: "form-editor", remote: true do |f| %>
 
     <div class="form-group">
       <%= f.label :message %>
