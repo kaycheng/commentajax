@@ -18,7 +18,9 @@ class StoriesController < ApplicationController
   end
 
   def show
-    @story = Story.find_by(id: params[:id])
+    @story = Story.find(params[:id])
+    @comment = @story.comments.new
+    @comments = @story.comments.all
   end
 
   private

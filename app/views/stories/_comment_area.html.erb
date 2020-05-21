@@ -1,0 +1,14 @@
+<section class="comment-area">
+  <div class="col-6 offset-3">
+    <%= form_with model: comment, url: story_comments_path(story), remote: true do |f| %>
+
+    <div class="form-group">
+      <%= f.label :message %>
+      <%= f.text_area :message, rows: 5, class: "form-control comment-editor" %>
+    </div>
+    <div class="form-group">
+      <%= f.submit class: "btn btn-info btn-block" %>
+    </div>
+    <% end %>
+  </div>
+</section>

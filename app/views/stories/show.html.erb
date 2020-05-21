@@ -1,2 +1,14 @@
 <h1><%= @story.title %></h1>
 <p><%= simple_format(@story.content) %></p>
+<hr>
+
+<h2 class="text-center">Comment</h2>
+<!-- Comment Area -->
+<%= render "stories/comment_area", story: @story, comment: @comment %>
+
+<!-- Comment-->
+<section class="comment">
+  <div class="col-6 offset-3">
+
+  </div>
+</section>
