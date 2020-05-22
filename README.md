@@ -1,24 +1,35 @@
-# README
+# CommentAjax
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+CommentAjax is a simple website to practice of ajax function on Rails project. In this porject, we create user, story and comment table. Furthermore, we use ajax skill to deal with comment. When we click the submit button, then we can directly get message on page instead of reloading pages.
 
-Things you may want to cover:
+## Tech/Framework used
 
-* Ruby version
+**Built with**
 
-* System dependencies
+* [Ruby on Rails 6.0.3](http://rubyonrails.org/)
 
-* Configuration
+* [Ruby 2.6](https://www.ruby-lang.org/en/)
 
-* Database creation
+## Installation
 
-* Database initialization
+To clone and run this application, you'll need [Git](https://git-scm.com/) and [Ruby on Rails](http://rubyonrails.org/) installed on your computer. From your command line:
 
-* How to run the test suite
+### Clone this repository
+```
+$ git clone https://github.com/kaycheng/commentajax.git
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Go into the repository
+```
+$ cd commentajax
+```
 
-* Deployment instructions
+### Install dependencies
+```
+$ bundle install
+```
 
-* ...
+### Run the app
+```
+$ foreman start
+```
