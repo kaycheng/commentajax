@@ -3,5 +3,6 @@
 
 <% @stories.each do |story| %>
   <h2><%= link_to story.title, story_path(story), class: "text-dark text-decoration-none" %></h2>
+  <h4><%= story.user.email.split('@').first %></h4>
   <p><%= simple_format(story.content).truncate(200) %></p>
 <% end %>
